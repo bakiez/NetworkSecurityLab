@@ -66,7 +66,11 @@ the garage door, it will react by opening or closing.
 *Assemble a signal that is able to open the garage
 door and transmit it. Ensure that the “garage door” opens.*
 
-> TODO, Jarno or Frits
+The garage door can be opened by sending recorded data containing the predefined 
+bitsequence. We are using osmocom sink to send the data as shown in the following 
+schema:
+
+![](./schema1.png)
 
 ### Question 6
 *Describe the weakness of the garage door opener
@@ -125,11 +129,17 @@ to the signals sent by the remote. When can the SDR no longer
 receive and decode the transmission? Mark this threshold in the
 chart as well.*
 
-When answering the question, no garage door opener was available. For that reason
-we used a car key to show the method. The test was done outside, in a suburban
-residential. It operates at the same 433 MHz frequency as the garage door system
-from the previous questions.
-> TODO, Thijs
+When answering the question, no garage door opener was available. 
+For that reason we tried a Nissan car key ([frequencies: 301.5 MHz, 
+302.5 MHz, 315MHz, 433MHz](http://www.sigidwiki.com/wiki/Nissan_Car_Key)),
+but we received only noise on those frequencies. 
+
+The chart would be created by measuring the power of the signal at increasing
+distances. This power can be found in the 'time domain' tab when running the 
+scan with the *gnuradio-companion* program.
+Marking at what distance the garage door (or in our case, car door) would stop
+responding can trivially found by trying to open/close the door at increasing
+distances.
 
 ### Question 9 
 *Based on the approximate receiver sensitivity of the
@@ -137,4 +147,4 @@ garage door, estimate from how far away an adversary could
 successfully observe and inject a signal only based on antenna
 gain.*
 
-
+Based on the use case of a garage door opener, we expect that the signal will have a range of approximally 20 meters. Especially because the signal might have same losses due to the window of the car and the garage deur it needs to go through.
