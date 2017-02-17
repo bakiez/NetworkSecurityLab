@@ -26,7 +26,10 @@ frequency and bandwidth of the signal for later processing.*
 
 There are power intensity changes at 433 MHz when pressing a button on the 
 garage door opener. This implies that Amplitude Modulation is used. In the 
-time domain this is very well visible
+time domain this is very well visible. Because we see only a 'zero' level and 
+a 'high' level, On-Of-Keying must be the used method of amplitude modulation. 
+
+TODO: bandwidth
 
 
 ### Question 3 
@@ -34,8 +37,11 @@ time domain this is very well visible
 you identified earlier and study the signal. What information is
 transmitted by the garage door remote?*
 
-> Bitsequence: 1011001111001010000010000, or inverted. Depending on whether
-a 'long' is a one or a zero.
+The garage door remote sends a predefined bitsequence: 
+1011001111001010000010000 (or inverted, depending on whether a 'long' is a one 
+or a zero). 
+There is a bit sequence for opening and a bit sequence for closing the door, so
+the only information that is sent is the command.
 
 
 ### Question 4 
@@ -43,13 +49,18 @@ a 'long' is a one or a zero.
 does the protocol of the wireless remote works. What triggers the
 garage door to open and close?*
 
-> Send predefined bitsequence for opening and closing the garage door
+The protocol is a one-way communication from the garage door opener to the 
+garage door.
+The garage door opener sends a predefined bitsequence for opening or closing 
+the garage door. Depending on which of the two bitsequences is received by 
+the garage door, it will react by opening or closing.
+
 
 ### Question 5 
 *Assemble a signal that is able to open the garage
 door and transmit it. Ensure that the “garage door” opens.*
 
-> TODO
+> TODO, Jarno or Frits
 
 ### Question 6
 *Describe the weakness of the garage door opener
@@ -60,13 +71,22 @@ to accomplish this. Aside from the cryptographic and network-
 security related aspects, also comment on usability aspects of
 your proposed solution.*
 
-> both have a key, garage door asks to encrypt a certain sequence
+The weakness of the garage door opener is that there is no way to verify that
+the sender of the 'open' or 'close' command is the garage door opener.
+A method of implementing some security is to use a shared key or key pair, 
+where the garage door opener has one key, and the garage door receiver has the 
+other. 
+Whenever the garage door receiver receives an 'open' or 'close' command, it will
+send out a random sequence that has to be sent back encrypted. Only the garage
+door opener can encrypt (sign) this sentence such that the garage door receiver 
+can decrypt it. When the garage door has received the sequence with the correct
+signature, it will execute the received command.
 
 ### Question 7 
 *Given the chart, estimate the beamwidth of the antenna. What range extension 
 would you expect in boresight?*
 
-> ?
+> TODO, Jarno or Frits
 
 ### Question 8
 *Plot a chart of distance versus signal strength ob-
@@ -75,6 +95,11 @@ to the signals sent by the remote. When can the SDR no longer
 receive and decode the transmission? Mark this threshold in the
 chart as well.*
 
+When answering the question, no garage door opener was available. For that reason
+we used a car key to show the method. The test was done outside, in a suburban
+residential. It operates at the same 433 MHz frequency as the garage door system
+from the previous questions.
+> TODO, Thijs
 
 ### Question 9 
 *Based on the approximate receiver sensitivity of the
