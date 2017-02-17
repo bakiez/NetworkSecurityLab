@@ -152,7 +152,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>25e6</value>
+      <value>1e6</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -227,7 +227,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(544, 273)</value>
+      <value>(584, 273)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -303,6 +303,57 @@
     <param>
       <key>vlen</key>
       <value>1</value>
+    </param>
+  </block>
+  <block>
+    <key>blocks_threshold_ff</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(784, 334)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>high</key>
+      <value>0.01</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>blocks_threshold_ff_0</value>
+    </param>
+    <param>
+      <key>init</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>low</key>
+      <value>0.005</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
     </param>
   </block>
   <block>
@@ -459,7 +510,7 @@
     </param>
     <param>
       <key>gui_hint</key>
-      <value>qtgui_tab_widget_0@2</value>
+      <value>qtgui_tab_widget_0@0</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -829,7 +880,7 @@
     </param>
     <param>
       <key>ctrlpanel</key>
-      <value>False</value>
+      <value>True</value>
     </param>
     <param>
       <key>affinity</key>
@@ -845,11 +896,11 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(760, 254)</value>
+      <value>(1136, 313)</value>
     </param>
     <param>
       <key>gui_hint</key>
-      <value>qtgui_tab_widget_0@1</value>
+      <value>qtgui_tab_widget_0@2</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -869,7 +920,7 @@
     </param>
     <param>
       <key>alpha1</key>
-      <value>1.0</value>
+      <value>1</value>
     </param>
     <param>
       <key>color1</key>
@@ -877,7 +928,7 @@
     </param>
     <param>
       <key>label1</key>
-      <value></value>
+      <value>raw data</value>
     </param>
     <param>
       <key>marker1</key>
@@ -917,7 +968,7 @@
     </param>
     <param>
       <key>alpha2</key>
-      <value>1.0</value>
+      <value>1</value>
     </param>
     <param>
       <key>color2</key>
@@ -925,7 +976,7 @@
     </param>
     <param>
       <key>label2</key>
-      <value></value>
+      <value>digital data</value>
     </param>
     <param>
       <key>marker2</key>
@@ -1113,11 +1164,11 @@
     </param>
     <param>
       <key>nconnections</key>
-      <value>1</value>
+      <value>2</value>
     </param>
     <param>
       <key>size</key>
-      <value>1024</value>
+      <value>1000000</value>
     </param>
     <param>
       <key>srate</key>
@@ -1133,11 +1184,11 @@
     </param>
     <param>
       <key>tr_level</key>
-      <value>0.0</value>
+      <value>0.01</value>
     </param>
     <param>
       <key>tr_mode</key>
-      <value>qtgui.TRIG_MODE_FREE</value>
+      <value>qtgui.TRIG_MODE_AUTO</value>
     </param>
     <param>
       <key>tr_slope</key>
@@ -1169,7 +1220,7 @@
     </param>
     <param>
       <key>ymin</key>
-      <value>-1</value>
+      <value>0</value>
     </param>
   </block>
   <block>
@@ -1208,7 +1259,7 @@
     </param>
     <param>
       <key>gui_hint</key>
-      <value>qtgui_tab_widget_0@0</value>
+      <value>qtgui_tab_widget_0@1</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1393,6 +1444,12 @@
   </block>
   <connection>
     <source_block_id>blocks_complex_to_mag_0</source_block_id>
+    <sink_block_id>blocks_threshold_ff_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>blocks_complex_to_mag_0</source_block_id>
     <sink_block_id>qtgui_time_sink_x_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
@@ -1402,6 +1459,12 @@
     <sink_block_id>blocks_throttle_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>blocks_threshold_ff_0</source_block_id>
+    <sink_block_id>qtgui_time_sink_x_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>1</sink_key>
   </connection>
   <connection>
     <source_block_id>blocks_throttle_0</source_block_id>
