@@ -96,9 +96,7 @@ signature, it will execute the received command.
 *Given the chart, estimate the beamwidth of the antenna. What range extension 
 would you expect in boresight?*
 
-
 ![alt](formules.png)
-
 
 SOURCES: [link](https://en.wikipedia.org/wiki/Free-space_path_loss), [link](https://en.wikipedia.org/wiki/Beamwidth).
 
@@ -127,4 +125,4 @@ garage door, estimate from how far away an adversary could
 successfully observe and inject a signal only based on antenna
 gain.*
 
-Based on the use case of a garage door opener, we expect that the signal will have a range of approximally 20 meters. Especially because the signal might have same losses due to the window of the car and the garage deur it needs to go through.
+Based on the use case of a garage door opener, we expect that the signal will have a range of approximally 15 meters. Especially because the signal might have same losses due to the window of the car and the garage deur it needs to go through.
