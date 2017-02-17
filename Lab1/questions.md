@@ -64,7 +64,11 @@ the garage door, it will react by opening or closing.
 *Assemble a signal that is able to open the garage
 door and transmit it. Ensure that the “garage door” opens.*
 
-> TODO, Jarno or Frits
+The garage door can be opened by sending recorded data containing the predefined 
+bitsequence. We are using osmocom sink to send the data as shown in the following 
+schema:
+
+![](./schema1.png)
 
 ### Question 6
 *Describe the weakness of the garage door opener
