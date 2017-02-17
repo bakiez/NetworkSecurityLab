@@ -2,6 +2,12 @@
 
 # Questions lab 1
 
+Jarno Moree, 4387333, j.moree@student.tudelft.nl
+
+Frits Kastelein, 4044533, f.p.kastelein@student.tudelft.nl
+
+Thijs ter Horst, 4156749, g.m.terhorst@student.tudelft.nl
+
 ### Question 1 
 *Research the frequencies of the ISM bands, and describe where you would expect
 to find the signal, given the properties of radio waves at these particular and 
@@ -125,4 +131,7 @@ garage door, estimate from how far away an adversary could
 successfully observe and inject a signal only based on antenna
 gain.*
 
-Based on the use case of a garage door opener, we expect that the signal will have a range of approximally 15 meters. Especially because the signal might have same losses due to the window of the car and the garage deur it needs to go through.
+Based on the use case of a garage door opener, we expect that the signal will 
+have a range of approximally 15 meters. Especially because the signal might 
+have same losses due to the window of the car and the garage door it needs 
+to go through.
