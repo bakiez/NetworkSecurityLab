@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?grc format='1' created='3.7.10'?>
+<?grc format='1' created='3.7.9'?>
 <flow_graph>
   <timestamp>Thu Feb 16 21:14:53 2017</timestamp>
   <block>
@@ -286,7 +286,7 @@
     </param>
     <param>
       <key>freq0</key>
-      <value>300e6</value>
+      <value>400e6</value>
     </param>
     <param>
       <key>gain_mode0</key>
@@ -1554,7 +1554,7 @@
     </param>
     <param>
       <key>args</key>
-      <value>bladerf</value>
+      <value>rtl</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -1676,10 +1676,6 @@
       <value>1.0</value>
     </param>
     <param>
-      <key>axislabels</key>
-      <value>True</value>
-    </param>
-    <param>
       <key>bw</key>
       <value>25e6</value>
     </param>
@@ -1689,7 +1685,7 @@
     </param>
     <param>
       <key>fc</key>
-      <value>300e6</value>
+      <value>430e6</value>
     </param>
     <param>
       <key>comment</key>
@@ -1717,7 +1713,7 @@
     </param>
     <param>
       <key>gui_hint</key>
-      <value></value>
+      <value>qtgui_tab_widget_0@2</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1948,20 +1944,12 @@
       <value>firdes.WIN_BLACKMAN_hARRIS</value>
     </param>
     <param>
-      <key>label</key>
-      <value>Relative Gain</value>
-    </param>
-    <param>
       <key>ymax</key>
       <value>10</value>
     </param>
     <param>
       <key>ymin</key>
       <value>-140</value>
-    </param>
-    <param>
-      <key>units</key>
-      <value>dB</value>
     </param>
   </block>
   <block>
@@ -2086,10 +2074,6 @@
       <value>False</value>
     </param>
     <param>
-      <key>axislabels</key>
-      <value>True</value>
-    </param>
-    <param>
       <key>alias</key>
       <value></value>
     </param>
@@ -2119,7 +2103,7 @@
     </param>
     <param>
       <key>gui_hint</key>
-      <value></value>
+      <value>qtgui_tab_widget_0@1</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -2445,10 +2429,6 @@
   <block>
     <key>qtgui_waterfall_sink_x</key>
     <param>
-      <key>axislabels</key>
-      <value>True</value>
-    </param>
-    <param>
       <key>bw</key>
       <value>25e6</value>
     </param>
@@ -2458,7 +2438,7 @@
     </param>
     <param>
       <key>fc</key>
-      <value>300e6</value>
+      <value>430e6</value>
     </param>
     <param>
       <key>comment</key>
@@ -2482,7 +2462,7 @@
     </param>
     <param>
       <key>gui_hint</key>
-      <value></value>
+      <value>qtgui_tab_widget_0@0</value>
     </param>
     <param>
       <key>_rotation</key>
