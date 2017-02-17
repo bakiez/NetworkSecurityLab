@@ -121,4 +121,4 @@ garage door, estimate from how far away an adversary could
 successfully observe and inject a signal only based on antenna
 gain.*
 
-
+Based on the use case of a garage door opener, we expect that the signal will have a range of approximally 20 meters.
