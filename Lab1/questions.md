@@ -31,6 +31,7 @@ a 'high' level, On-Of-Keying must be the used method of amplitude modulation.
 
 TODO: bandwidth
 
+![](/media/Storage/thijs/Dropbox/Course_Documents/Master/AdvancedNetworkSecurity/NetworkSecurityLab/Lab1/signal1.png)
 
 ### Question 3 
 *Demodulate the signal based on the modulation type
