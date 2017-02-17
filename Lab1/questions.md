@@ -98,7 +98,7 @@ would you expect in boresight?*
 
 The beamwidth, i.e., the angle between the two half-power ($-3dB$) points closest to the boresight axis of the antenna, is already shown in figure 5 as purple lines in the lab assignment. Here can be seen that the beamwidth is approximately $\frac{7}{9} * 90^{\circ} = 70^{\circ}$ 
 
-The antenna gives, in boresight, a gain of $8dB$. This extra power is lost because of the free-spaca path loss (FSPL):
+The antenna gives, in boresight, a gain of $8dB$. This extra power is lost because of the free-space path loss (FSPL):
 
 $$ FSPL = {\left(\frac{4 \pi d}{\lambda}\right)}^2 = {\left(\frac{4 \pi d f}{c}\right)}^2$$
 
@@ -147,4 +147,4 @@ garage door, estimate from how far away an adversary could
 successfully observe and inject a signal only based on antenna
 gain.*
 
-Based on the use case of a garage door opener, we expect that the signal will have a range of approximally 20 meters. Especially because the signal might have same losses due to the window of the car and the garage deur it needs to go through.
+Based on the use case of a garage door opener, we expect that the signal will have a range of approximally 15 meters. Especially because the signal might have same losses due to the window of the car and the garage deur it needs to go through.
