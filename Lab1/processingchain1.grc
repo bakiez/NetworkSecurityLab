@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?grc format='1' created='3.7.9'?>
+<?grc format='1' created='3.7.10'?>
 <flow_graph>
   <timestamp>Thu Feb 16 21:14:53 2017</timestamp>
   <block>
@@ -89,7 +89,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>300M</value>
+      <value>300e6</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -125,15 +125,15 @@
     </param>
     <param>
       <key>start</key>
-      <value>300M</value>
+      <value>300e6</value>
     </param>
     <param>
       <key>step</key>
-      <value>1M</value>
+      <value>1e6</value>
     </param>
     <param>
       <key>stop</key>
-      <value>2.5G</value>
+      <value>2.5e9</value>
     </param>
     <param>
       <key>rangeType</key>
@@ -152,7 +152,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>25M</value>
+      <value>25e6</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -188,15 +188,15 @@
     </param>
     <param>
       <key>start</key>
-      <value>1M</value>
+      <value>1e6</value>
     </param>
     <param>
       <key>step</key>
-      <value>1M</value>
+      <value>1e6</value>
     </param>
     <param>
       <key>stop</key>
-      <value>25M</value>
+      <value>25e6</value>
     </param>
     <param>
       <key>rangeType</key>
@@ -286,7 +286,7 @@
     </param>
     <param>
       <key>freq0</key>
-      <value>300M</value>
+      <value>300e6</value>
     </param>
     <param>
       <key>gain_mode0</key>
@@ -1562,7 +1562,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(40, 188)</value>
+      <value>(8, 180)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1658,7 +1658,7 @@
     </param>
     <param>
       <key>sample_rate</key>
-      <value>25M</value>
+      <value>25e6</value>
     </param>
     <param>
       <key>sync</key>
@@ -1676,8 +1676,12 @@
       <value>1.0</value>
     </param>
     <param>
+      <key>axislabels</key>
+      <value>True</value>
+    </param>
+    <param>
       <key>bw</key>
-      <value>25M</value>
+      <value>25e6</value>
     </param>
     <param>
       <key>alias</key>
@@ -1685,7 +1689,7 @@
     </param>
     <param>
       <key>fc</key>
-      <value>300M</value>
+      <value>300e6</value>
     </param>
     <param>
       <key>comment</key>
@@ -1944,12 +1948,20 @@
       <value>firdes.WIN_BLACKMAN_hARRIS</value>
     </param>
     <param>
+      <key>label</key>
+      <value>Relative Gain</value>
+    </param>
+    <param>
       <key>ymax</key>
       <value>10</value>
     </param>
     <param>
       <key>ymin</key>
       <value>-140</value>
+    </param>
+    <param>
+      <key>units</key>
+      <value>dB</value>
     </param>
   </block>
   <block>
@@ -2072,6 +2084,10 @@
     <param>
       <key>autoscale</key>
       <value>False</value>
+    </param>
+    <param>
+      <key>axislabels</key>
+      <value>True</value>
     </param>
     <param>
       <key>alias</key>
@@ -2375,7 +2391,7 @@
     </param>
     <param>
       <key>srate</key>
-      <value>25M</value>
+      <value>25e6</value>
     </param>
     <param>
       <key>tr_chan</key>
@@ -2429,8 +2445,12 @@
   <block>
     <key>qtgui_waterfall_sink_x</key>
     <param>
+      <key>axislabels</key>
+      <value>True</value>
+    </param>
+    <param>
       <key>bw</key>
-      <value>25M</value>
+      <value>25e6</value>
     </param>
     <param>
       <key>alias</key>
@@ -2438,7 +2458,7 @@
     </param>
     <param>
       <key>fc</key>
-      <value>300M</value>
+      <value>300e6</value>
     </param>
     <param>
       <key>comment</key>
