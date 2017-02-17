@@ -29,9 +29,11 @@ garage door opener. This implies that Amplitude Modulation is used. In the
 time domain this is very well visible. Because we see only a 'zero' level and 
 a 'high' level, On-Of-Keying must be the used method of amplitude modulation. 
 
-TODO: bandwidth
+The grey line in the image below shows a 'max hold' of the signal, where it 
+can be seen that the signal from the key is visible in the band of 431-437 MHz,
+so the bandwidth is 6 MHz.
 
-![](./signal1.png)
+![Frequency vs Power of the signal](./freq_vs_power.jpg)
 
 ### Question 3 
 *Demodulate the signal based on the modulation type
@@ -44,6 +46,7 @@ or a zero).
 There is a bit sequence for opening and a bit sequence for closing the door, so
 the only information that is sent is the command.
 
+![](./signal1.png)
 
 ### Question 4 
 *Compare each of the transmissions, describe how
