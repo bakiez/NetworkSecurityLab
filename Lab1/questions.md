@@ -103,11 +103,17 @@ to the signals sent by the remote. When can the SDR no longer
 receive and decode the transmission? Mark this threshold in the
 chart as well.*
 
-When answering the question, no garage door opener was available. For that reason
-we used a car key to show the method. The test was done outside, in a suburban
-residential. It operates at the same 433 MHz frequency as the garage door system
-from the previous questions.
-> TODO, Thijs
+When answering the question, no garage door opener was available. 
+For that reason we tried a Nissan car key ([frequencies: 301.5 MHz, 
+302.5 MHz, 315MHz, 433MHz](http://www.sigidwiki.com/wiki/Nissan_Car_Key)),
+but we received only noise on those frequencies. 
+
+The chart would be created by measuring the power of the signal at increasing
+distances. This power can be found in the 'time domain' tab when running the 
+scan with the *gnuradio-companion* program.
+Marking at what distance the garage door (or in our case, car door) would stop
+responding can trivially found by trying to open/close the door at increasing
+distances.
 
 ### Question 9 
 *Based on the approximate receiver sensitivity of the
